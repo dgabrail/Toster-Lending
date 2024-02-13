@@ -1,0 +1,541 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins';
+  font-weight: 400;
+  color: #1F1F1F;
+  font-size: 16px;
+  background: #FFF;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+a,
+button {
+  color: inherit;
+  font-size: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.head-offer {
+  text-align: center;
+  background-color: #EC6566;
+  color: #FFF;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.header {
+  background: #000;
+  transition: 0.5s;
+}
+
+.header-content {
+  padding: 30px 24px 30px 24px;
+}
+
+.head-offer p {
+  margin: 0;
+  padding: 3px 0px;
+}
+
+.logo-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 16px;
+}
+
+.nav {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.8s;
+}
+
+#navBtn {
+  background: none;
+  border: none;
+  background: url(../images/burger.svg) no-repeat;
+  width: 25px;
+  height: 27px;
+  box-shadow: none;
+}
+
+.nav-content {
+  margin: 0;
+  padding: 10px 0px 0px 0px;
+  list-style: none;
+}
+
+.nav-content li {
+  padding: 24px 0 0;
+  font-weight: 500;
+}
+
+.nav-content li:first-child {
+  font-weight: 600;
+}
+
+.nav-content li a {
+  display: block;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main {
+  background: #000;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+}
+
+.winged-phrase {
+  text-align: center;
+  background: linear-gradient(to right, #878787, #fff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.winged-phrase h3 {
+  margin: 0;
+  font-size: 35px;
+  font-weight: 700;
+  padding: 0px 0px 20px 0;
+  transition: 1s;
+}
+
+.winged-phrase p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 16px;
+}
+
+.rating {
+  display: block;
+  min-height: 75px;
+  max-width: 200px;
+  border-radius: 16px;
+  background: #FFF;
+  padding: 11px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.appraisal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.reviews {
+  display: flex;
+  justify-content: space-around;
+}
+
+.price {
+  color: #FFF;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.price-one {
+  font-size: 43px;
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+.price-two {
+  font-size: 27px;
+  font-weight: 600;
+}
+
+.price-two::after {
+  content: "";
+  display: inline-block;
+  width: 70px;
+  height: 8px;
+  background: url(../images/Vector\ 6.svg) no-repeat;
+  margin-left: -70px;
+  margin-bottom: 5px;
+}
+
+.Mac-Black-Image {
+  padding: 0;
+}
+
+.Mac-Black-Image img {
+  margin: auto;
+  display: block;
+  width: 200%;
+  margin-bottom: 30px;
+}
+
+.shipping {
+  display: flex;
+  font-family: 'Montserrat';
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: start;
+}
+
+.column {
+  min-height: 36px;
+  padding: 5px 8px;
+  background: #D5D5D5;
+  border-radius: 4px;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.column p {
+  margin: 0;
+}
+
+.column span {
+  font-weight: 700;
+}
+
+.column-2 {
+  font-size: 8px;
+}
+
+.slider {
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  max-width: 300px;
+  height: 300px;
+  margin-bottom: 10px;
+}
+
+.slider-photo {
+  position: absolute;
+  display: block;
+  transition: 1s;
+  transform: translateX(100%);
+}
+
+.slider-indicate {
+  height: 8px;
+  background: #EBEAE8;
+  border-radius: 10px;
+  overflow: visible;
+  display: flex;
+}
+
+.rectangle {
+  border-radius: 10px;
+  background: #EBEAE8;
+  height: 8px;
+  width: 25%;
+}
+
+.title {
+  font-weight: 600;
+  font-family: 'Montserrat';
+  font-size: 32px;
+  color: #1F1F1F;
+  margin: 12px 0 20px 0;
+}
+
+.number-items-left {
+  color: #FF4053;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.items {
+  height: 8px;
+  border-radius: 10px;
+  background: #EBEAE8;
+  margin-bottom: 20px;
+}
+
+.items-rectangle {
+  background: #FF4053;
+  width: 33.3333%;
+}
+
+.DualSense {
+  color: #1F1F1F;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.DualSense p {
+  margin: 0px 0px 10px;
+}
+
+.sale-ending-timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #F5F5F6;
+  border-radius: 1000px;
+  text-align: center;
+  color: #000;
+  font-size: 16px;
+  height: 40px;
+  margin-bottom: 12px;
+}
+
+.timer {
+  color: #B15FFF;
+  font-weight: 600;
+  margin-left: 6px;
+}
+
+.main-price {
+  margin-bottom: 20px;
+}
+
+.discounted {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.percentage {
+  color: #FF4053;
+}
+
+.Special-offer p {
+  text-align: center;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 0 12px;
+}
+
+.Special-offer-two {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0px 0px 16px;
+}
+
+.Special-offer-two img {
+  margin-right: 6px;
+}
+
+.buy-button {
+  width: 100%;
+  border-radius: 8px;
+  padding: 16px 0;
+  background: #B0FDE4;
+  border: none;
+  color: #000;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+
+.popup-overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: 1s;
+  top: 0;
+  left: 0;
+}
+
+.popup {
+  border-radius: 12px;
+  padding: 20px 10px;
+  position: absolute;
+  margin: auto;
+  top: 30%;
+  transform: translateX(100%);
+  max-width: 400px;
+  font-size: 14px;
+  background: #FFF;
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+  border-color: #B0FDE4;
+  border: 2px solid #B0FDE4;
+  font-weight: 700;
+}
+
+.afterpay {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.popup-closing {
+  border: none;
+  width: 13px;
+  height: 13px;
+  background: url(../images/X-afterpay-popup.svg) no-repeat;
+}
+
+.popup-title {
+  margin: 0 0 16px;
+  font-size: 18px;
+  text-align: left;
+}
+
+.monthly-payments {
+  border-radius: 10px;
+  background: #F5F5F5;
+  padding: 10px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.monthly-payment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.months {
+  border-radius: 30px;
+  text-align: center;
+  padding: 6px 14px;
+  background: #B0FDE4;
+}
+
+.total-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total-block h4 {
+  margin: 0 0 4px 0;
+}
+
+.total-block span {
+  font-weight: 400;
+}
+
+.checkout {
+  display: block;
+  width: 100%;
+  padding: 12px 0;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  background: #B0FDE4;
+  font-weight: 700;
+}
+
+.ready-for-ship p {
+  text-align: left;
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #717271;
+}
+
+.shipping-Kingdom {
+  margin-bottom: 40px;
+}
+
+.shipping-information {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+
+.free-shipping {
+  margin-top: 36px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.free-shipping p {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 14px;
+  color: #000;
+}
+
+.vector-btn {
+  width: 20px;
+  height: 20px;
+  background: url(../images/Vector.svg) no-repeat;
+  border: none;
+  transition: 0.5s;
+  transform: rotate(180deg);
+}
+
+.shipping-information p {
+  margin: 0;
+  text-align: left;
+  color: #6B6B6B;
+}
+
+.logo-shipping {
+  display: flex;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+footer {
+  padding: 16px 0;
+  background: #000;
+  text-align: center;
+  color: #fff;
+  font-size: 8px;
+}
+
+.footerP {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+
+footer p {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.reed-less {
+  margin-top: 16px;
+  padding: 6px 18px;
+  color: #000;
+  border-radius: 100px;
+  border: none;
+
+}
